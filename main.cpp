@@ -14,8 +14,6 @@ int main()
 {
     personType student("Mary", "Beth", "Regan");
 
-
-
     student.print();
 
     cout << endl;
