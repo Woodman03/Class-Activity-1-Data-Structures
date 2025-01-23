@@ -20,24 +20,24 @@ void personType::setName(string first, string middle, string last)
 
 string personType::getFirstName() const
 {
-    return firstName;
+    return firstName; // return first name
 }
 
 string personType::getMiddleName() const
 {
-    return middleName;
+    return middleName; // return middle name
 }
 
 string personType::getLastName() const
 {
-    return lastName;
+    return lastName; // return last name
 }
 
 //constructor
 personType::personType(string first, string middle, string last)
 
 {
-    firstName = first;
-    middleName = middle;
-    lastName = last;
+    firstName = first; // constructor for first name
+    middleName = middle; // constructor for middle name
+    lastName = last; // constructor for last name
 }
