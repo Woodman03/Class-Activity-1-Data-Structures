@@ -11,7 +11,7 @@ public:
     //Function to output the first name and last name
     //in the form firstName lastName.
 
-    void setName(string first, string last);
+    void setName(string first, string middle, string last);
     //Function to set firstName and lastName according 
     //to the parameters.
     //Postcondition: firstName = first; lastName = last
@@ -20,11 +20,15 @@ public:
     //Function to return the first name.
     //Postcondition: The value of firstName is returned.
 
+    string getMiddleName() const;
+    //Function to return the first name.
+    //Postcondition: The value of firstName is returned.
+
     string getLastName() const;
     //Function to return the last name.
     //Postcondition: The value of lastName is returned.
 
-    personType(string first = "", string last = "");
+    personType(string first = "", string middle = "", string last = "");
     //Constructor
     //Sets firstName and lastName according to the parameters.
     //The default values of the parameters are null strings.
@@ -32,6 +36,7 @@ public:
 
 private:
     string firstName; //variable to store the first name
+    string middleName; // variable to store the middle name
     string lastName;  //variable to store the last name
 };
 

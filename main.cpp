@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-    personType student("Lisa", "Regan");
+    personType student("Lisa", "Amber", "Regan");
 
 
 
