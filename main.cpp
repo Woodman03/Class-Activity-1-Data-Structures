@@ -2,8 +2,6 @@
 // Date: 01/18/23
 // Description: Programming Assignment #1
 
-//Test Program personType with first name and last name
-
 #include <iostream>  
 #include <string>
 #include "personType.h" 
@@ -12,31 +10,58 @@ using namespace std;
 
 int main()
 {
+    // personType object
     personType student("Mary", "Beth", "Regan");
 
-    student.print();
+    // variables for user input name
+    string firstNameIn, middleNameIn, lastNameIn;
 
-    cout << endl;
+    // user input first name
+    cout << "Enter first name:  ";
+    getline(cin, firstNameIn);
+
+    // user input middle name
+    cout << "Enter middle name: ";
+    getline(cin, middleNameIn);
+
+    // user input last name
+    cout << "Enter last name:   ";
+    getline(cin, lastNameIn);
+
+    // print given name and user input name
+    cout << "\n./././././././././././././././././././././././././././././././././././././.\n" << endl;
+    cout << "The Student's Name Is:   " << student.getFirstName() << " " << student.getMiddleName() << " " << student.getLastName() << endl;
+    cout << "The Name You Entered Is: " << firstNameIn << " " << middleNameIn << " " << lastNameIn << endl;
+    cout << "\n./././././././././././././././././././././././././././././././././././././.\n" << endl;
 
 
-    //     string firstName;
-    //     string lastName;
+    // check if the first name matches
+    if (student.FirstName(firstNameIn)) 
+    {
+        cout << "First name matches." << endl;
+    }
+    else 
+    {
+        cout << "First name does not match." << endl;
+    }
 
+    // check if the middle name matches
+    if (student.getMiddleName() == middleNameIn) 
+    {
+        cout << "Middle name matches." << endl;
+    }
+    else {
+        cout << "Middle name does not match." << endl;
+    }
 
-    //     cout << "Please enter the first student's first name: ";
-    //     cin >> firstName;
-    //     cout << "Please enter the first student's middle name: ";
-    //     cin >> middleName;
-    //     cout << "Please enter the first student's last name: ";
-    //     cin >> lastName;
+    // check if the last name matches
+    if (student.LastName(lastNameIn)) 
+    {
+        cout << "Last name matches." << endl;
+    }
+    else {
+        cout << "Last name does not match." << endl;
+    }
 
-    //   personType student2;
-
-    //   student2.setName(firstName, middleName, lastName);
-
-
-    //     cout << "Second student's first name: " << student2.getFirstName() << endl;
-    //     cout << "Second student's middle name: " << student2.getMiddleName() << endl;
-    //     cout << "Second Student's last name: " << student2.getLastName() << endl;
     return 0;
 }

@@ -16,6 +16,21 @@ public:
     //to the parameters.
     //Postcondition: firstName = first; middleName = middle; lastName = last
 
+    void setLastName(string last);
+    // Function to set lastName; lastName = last
+
+    void setFirstName(string first);
+    // Function to set firstName; firstName = first
+
+    void setMiddleName(string middle);
+    // Function to set middleName; middleName = middle
+
+    bool LastName(string last) const;
+    // Bool function for lastName
+
+    bool FirstName(string first) const;
+    // Bool function for first name
+
     string getFirstName() const;
     //Function to return the first name.
     //Postcondition: The value of firstName is returned.
